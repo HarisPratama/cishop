@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Fixed top navbar example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbar-fixed/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- App Css -->
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- Fontawesome css -->
+    <link rel="stylesheet" href="/assets/libs/fontawesome/css/all.min.css">
+</head>
+
+
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">CIShop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-1" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Manage
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-1">
+                            <a class="dropdown-item" href="/admin-category.html">Category</a>
+                            <a class="dropdown-item" href="/admin-product.html">Product</a>
+                            <a class="dropdown-item" href="/admin-order.html">Order</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Cart(0)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-2" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Admin
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-2">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Orders</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div role="main" class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <span>Produk</span>
+                        <a href="/admin-produk-form.html" class="btn btn-sm btn-secondary">Tambah</a>
+                        <div class="float-right">
+                            <form action="#">
+                                <div class="input-group">
+                                    <input type="text" class="form-control form-control-sm text-center"
+                                        placeholder="Cari">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary btn-sm" type="submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                        <a href="#" class="btn btn-secondary btn-sm">
+                                            <i class="fas fa-eraser"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Produk</th>
+                                    <th scope="col">Kategori</th>
+                                    <th scope="col">Harga</th>
+                                    <th scope="col">Stok</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p>
+                                            <img src="https://placehold.co/70x70" alt="">
+                                            Laptop Core i9
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-primary"><i class="fas fa-tag"></i> Laptop</span>
+                                    </td>
+                                    <td>Rp. 13.000.000</td>
+                                    <td>Tersedia</td>
+                                    <td>
+                                        <form action="#">
+                                            <a href="#">
+                                                <button class="btn btn-sm">
+                                                    <i class="fas fa-edit text-info"></i>
+                                                </button>
+                                            </a>
+                                            <button class="btn btn-sm" type="submit"
+                                                onclick="return confirm('Are you sure ?')">
+                                                <i class="fas fa-trash text-danger"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/assets/libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
